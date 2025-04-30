@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet, ActivityIndicator, Keyboard } from 'react-native';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const KEY_GEMINI = 'AIzaSyBicDb9kMjvCCOU95DJi83ufh4lICah4f8'; // Substitua pela sua chave
+const KEY_GEMINI = ''; // Substitua pela sua chave
 const genAI = new GoogleGenerativeAI(KEY_GEMINI);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 const generationConfig = { temperature: 1, topP: 0.95, topK: 64, maxOutputTokens: 500, responseMimeType: "text/plain" };
